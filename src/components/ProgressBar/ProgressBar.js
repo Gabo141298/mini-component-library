@@ -10,17 +10,17 @@ const PROGRESS_BAR_MAX_VALUE = 100;
 
 const SIZES = {
   small: {
-    height: "8px",
-    borderRadius: "4px"
+    "--height": "8px",
+    "--borderRadius": "4px"
   },
   medium: {
-    height: "12px",
-    borderRadius: "4px"
+    "--height": "12px",
+    "--borderRadius": "4px"
   },
   large: {
-    height: "24px",
-    padding: "4px",
-    borderRadius: "8px"
+    "--height": "24px",
+    "--padding": "4px",
+    "--border-radius": "8px"
   }
 }
 
@@ -51,6 +51,9 @@ const Wrapper = styled.div`
   box-shadow: inset 0px 2px 4px ${COLORS.transparentGray35};
   background-color: ${COLORS.transparentGray15};
   width: 100%;
+  height: var(--height);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
 `;
 
 const BarTrimmer = styled.div`
