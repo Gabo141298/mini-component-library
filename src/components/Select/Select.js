@@ -12,7 +12,7 @@ const Select = ({ label, value, onChange, children }) => {
 
   return (
     <Wrapper>
-      <HiddenSelect value={value} onChange={onChange}>
+      <HiddenSelect value={value} onChange={onChange} aria-label={label}>
         {children}
       </HiddenSelect>
 
